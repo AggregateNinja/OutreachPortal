@@ -1,0 +1,12 @@
+{
+    "name": "edd/pokitdok-php-master",
+    "require": {
+        "pokitdok/pokitdok-php": "*"
+    },
+    "authors": [
+        {
+            "name": "Ed",
+            "email": "ebossmeyer@gmail.com"
+        }
+    ]
+}
