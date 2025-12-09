@@ -16,14 +16,9 @@ class TwilioController {
     // $auth_token = $_ENV["TWILIO_AUTH_TOKEN"]
 
     // Avalon Demo
-    private $AccountSID = 'ACc1242e79e7ff02da9ca2f3161387d5c4';
-    private $AuthToken = '8322d542272ae7257c7179538dcb46b6';
-    private $SenderPhone = "+16592075580";
-
-    // Genesis
-//    private $AccountSID = 'ACe58f54fc3dd7ffcdab991ebe4a7425e4';
-//    private $AuthToken = '84fcd4dc55f01ea5d3c45a4c933203c8';
-//    private $SenderPhone = "+16097578209";
+    private $AccountSID = 'accountsid';
+    private $AuthToken = 'authtoken';
+    private $SenderPhone = "+55555555555";
 
     private $SMSBody = '';
     private $TwilioClient;
@@ -33,10 +28,6 @@ class TwilioController {
         $this->TwilioClient = new Client($this->AccountSID, $this->AuthToken);
         $this->QueueDAO = new SMSQueueDAO();
         $this->SMSBody = 'your lab test has been received and is being processed by the lab. Reply STOP to opt out';
-        // jim - +16095171518
-        // ed - +16097055700
-        // rick - +16097055704
-        // austin - +16092876062
     }
 
     /*
